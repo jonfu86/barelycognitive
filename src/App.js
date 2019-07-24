@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Header from './Header/Header';
 
 class App extends Component {
@@ -7,6 +7,9 @@ class App extends Component {
 	state = {
 		section: {
 			name: 'home'
+		},
+		navigation: {
+			open: 'false'
 		}	
 	}
 
@@ -15,14 +18,21 @@ class App extends Component {
 			section: {
 				name: name 
 			}	
-		});
-		console.log(this.state.section.name);
+		}, function(){console.log(this.state.section.name)});
+	}
+
+	openNavigationHandler = open => {
+		this.setState({
+			navigation:{
+				open: !this.state.navigation.open
+			}
+		}, function(){console.log(this.state.navigation.open)});
 	}
 
 	render() {
 		return (
 			<div className="App">
-				<Header switchSectionHandler={this.switchSectionHandler}/>
+				<Header switchSectionHandler={this.switchSectionHandler} navHandler={this.openNavigationHandler} open={this.state.navigation.open}/>
 				
 			</div>
 		);

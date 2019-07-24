@@ -1,30 +1,45 @@
 import React from 'react';
+import './Header.scss';
+import logo from './Barely_logo.png'
+
 // import Navigation from './Header/Navigation';
 
-const header = (props) => {
+const header = props => {
 	return (
-		<div className="header">
-			<h1> Barely Cognitive</h1>
-			<Navigation switchSectionHandler={props.switchSectionHandler} />
+		<div className="Header">
+			<img className="title" src={logo} alt="Barely Cognitive"></img>
+			<div className="nav-bar">
+				<Navigation switchSectionHandler={props.switchSectionHandler}/>
+			</div>
+			<div onClick= {props.navHandler} className={"hamburger " + (props.open ? 'close' : 'open')}>
+				<span className="cls"/>
+				<span><Navigation switchSectionHandler={props.switchSectionHandler}/></span>
+				<span className="cls"/>
+			</div>
 		</div>
 	)
 };
 
-const Navigation = (props) => {
+const Navigation = props => {
 	return (
-		<ul>
-	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="home" />
-	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="resume" />
-	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="portfolio" />
-	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="blog" />
-	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="hobbies" />
+		<ul className="nav-menu">
+	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="Home" />
+	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="About Me" />
+	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="Portfolio" />
+	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="Blog" />
+	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="Hobbies" />
 	    </ul>
 	)
 }
 
-const NavigationItem = (props) => {
+const NavigationItem = props => {
 	return (
-		<li><button onClick= { () => props.switchSectionHandler(props.name) }>{props.name}</button></li>
+		//two different ways to call a function between components
+		<li onClick= { () => props.switchSectionHandler(props.name) }>{props.name}</li>
+		
+		//below code only works if you bind a reference to the switchSectionHandler to a property of Navigation
+		// <li><button onClick= {props.switchSectionHandler}> {props.name}</button></li>
+		
 	)
 }
 

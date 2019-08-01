@@ -13,8 +13,12 @@ const header = props => {
 			</div>
 			<div onClick= {props.navHandler} className={"hamburger " + (props.open ? 'close' : 'open')}>
 				<span className="cls"/>
-				<span><Navigation switchSectionHandler={props.switchSectionHandler}/></span>
+				<span></span>
 				<span className="cls"/>
+				<span className="accent"/>
+			</div>
+			<div className="nav-burger">
+				<Navigation switchSectionHandler={props.switchSectionHandler} open={props.open}/>
 			</div>
 		</div>
 	)
@@ -22,7 +26,7 @@ const header = props => {
 
 const Navigation = props => {
 	return (
-		<ul className="nav-menu">
+		<ul className={"nav-menu " + (props.open ? 'close' : 'open')}>
 	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="Home" />
 	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="About Me" />
 	    	<NavigationItem switchSectionHandler={props.switchSectionHandler} name="Portfolio" />

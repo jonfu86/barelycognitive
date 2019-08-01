@@ -13,7 +13,12 @@ class App extends Component {
 		}	
 	}
 
-	switchSectionHandler = (name) => {
+	constructor(props) {
+	   super(props);
+	   this.openNavigationHandler = this.openNavigationHandler.bind(this);
+	}	
+
+	switchSectionHandler = name => {
 		this.setState({
 			section: {
 				name: name 
@@ -21,12 +26,12 @@ class App extends Component {
 		}, function(){console.log(this.state.section.name)});
 	}
 
-	openNavigationHandler = open => {
+	openNavigationHandler = function(event, open){
 		this.setState({
-			navigation:{
+			navigation: {
 				open: !this.state.navigation.open
 			}
-		}, function(){console.log(this.state.navigation.open)});
+		}, function(){console.log("hamburger-nav open: " + this.state.navigation.open)});
 	}
 
 	render() {

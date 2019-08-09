@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Header from './Header/Header';
+import Content from './Content/Content';
 
 class App extends Component {
 
@@ -38,7 +39,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header switchSectionHandler={this.switchSectionHandler} navHandler={this.openNavigationHandler} open={this.state.navigation.open}/>
-				
+				<Content page={this.state.section}/>
 			</div>
 		);
 		// return React.createElement('div', null, React.createElement('h1', {className:'App'}, 'Hi, I\'m a React App!!')); 

@@ -1,0 +1,84 @@
+.Resume {
+
+	h1 {
+		color: #338bd5;
+		margin: 0;
+	}
+
+	.top_box {
+		height: 250px;
+	    width: 900px;
+	    background-color: #000000;
+	    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+	    border: 1px #3824ca solid;
+	    border-radius: 5px;
+	    position: relative;
+	    margin-top: 60px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    overflow: auto;
+	    display: flex;
+	    flex-flow: row nowrap;
+		
+		.contact {
+			min-width: 425px;
+		    padding: 40px;
+		    display: inline-block;
+		   	// align-self: flex-start;
+		    // float: left;
+		}
+
+	    img {
+	    	height: 100%;
+	    	// align-self: flex-end;
+	    	margin-left: auto;
+	    	// float: right;
+	    }
+	}
+
+	.resume_content {
+		width: 900px;
+		margin: 40px auto;
+
+		.entry {
+
+		}
+
+		.entry_title{
+
+		}
+
+		h2 {
+    		margin-top: 40px;
+    		color: #338bd5;
+    		border-bottom: 1px solid #338bd5;
+    	}
+	}
+
+	.resume_main {
+		width: 650px;
+    	// padding-left: 20px;
+    	// padding-top: 20px;
+    	float: left;
+    	// display:inline-block;
+    	h2 {
+    		margin-top: 40px;
+    		color: #338bd5;
+    		border-bottom: 1px solid #338bd5;
+    	}
+	}
+
+	.sidebar{
+		// margin-left: 10px;
+    	// padding-top: 40px;
+    	// text-align: top;
+    	// width: 200px;
+    	// display:inline-block;
+    	float: right;
+
+    	ul {
+    		padding-left: 20px;
+    	}
+	}   
+}
+

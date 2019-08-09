@@ -1,8 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import logo from './Barely_logo.png'
-
-// import Navigation from './Header/Navigation';
+import logo from './Barely_logo.png';
 
 const header = props => {
 	return (

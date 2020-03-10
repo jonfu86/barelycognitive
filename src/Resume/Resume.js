@@ -13,17 +13,17 @@ const resume = props => {
 					<p>Phone: 408-841-6900</p>				
 					<p>LinkedIn: <a href="http://www.linkedin.com/in/jonfu/">www.linkedin.com/in/jonfu/ </a></p>		
 				</div>
-				<img src={work}/>			
+				<img src={work} alt="profile_image"/>			
 			</div>
 
-			<div class="resume_content">			
-				<div class="resume_main">				
+			<div className="resume_content">			
+				<div className="resume_main">				
 					<h2>Professional Info</h2>				
-					<p>After completing the Coding Dojo course, I have learned the basics of full-stuck web development. I am continuing to learn new technologies to expand my skillset as I accept paid projects as a freelance web developer. I am very passionate about coding and would love to hear about your website, project idea, or employment opportunity.</p>				
+					<p>After completing the Coding Dojo course, I have learned the basics of full-stack web development. I am continuing to learn new technologies to expand my skillset as I accept paid projects as a freelance web developer. I am very passionate about coding and would love to hear about your website, project idea, or employment opportunity.</p>				
 					<h2>Work Experience</h2>
 
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Software Engineer</h4><h5>August 2016 - May 2019</h5>
 						</div>						
 						<p>Kaazing - San Jose, CA</p>						
@@ -33,8 +33,8 @@ const resume = props => {
 						</ul>					
 					</div>	
 
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Software Engineer</h4><h5>August 2014 - July 2016</h5>
 						</div>						
 						<p>Montage Studios - Santa Clara, CA</p>						
@@ -44,8 +44,8 @@ const resume = props => {
 						</ul>					
 					</div>				
 					
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Payments Partner Support</h4><h5>May 2012 - April 2013</h5>
 						</div>						
 						<p>Google.com - Mtn View, CA</p>						
@@ -61,8 +61,8 @@ const resume = props => {
 						</ul>					
 					</div>					
 						
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Tech Support &amp; Visual Media Support</h4><h5>January 2010 - December 2010</h5>
 						</div>						
 						<p>Raiden Technologies - El Monte, CA</p>						
@@ -78,8 +78,8 @@ const resume = props => {
 					</div>					
 										
 
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Marketing Consultant Intern</h4><h5>August 2008 - October 2008</h5>
 						</div>						
 						<p>Laszlo Systems - San Mateo, CA</p>						
@@ -91,8 +91,8 @@ const resume = props => {
 						</ul>					
 					</div>									
 
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Marketing Consultant Intern</h4><h5>June 2008 - August 2008</h5>
 						</div>						
 						<p>eLooMobile - Beijing, China</p>						
@@ -105,16 +105,16 @@ const resume = props => {
 										
 
 					<h2>Education</h2>					
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Coding Dojo - Mountain View</h4><h5>November 2013 - February 2014</h5>
 						</div>											
 						<p>I have completed the Coding Dojo program to learn full stack web development. I have learned HTML, CSS, jQuery, Javascript, MYSQL, PHP, AJAX, CodeIgniter, and Ruby on Rails.</p>					
 					</div>					
 										
 
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>California State Polytechnic University - Pomona</h4><h5>2007-2011</h5>
 						</div>						
 						<p>Bachelor of Science, International Business and Marketing</p>											
@@ -122,19 +122,19 @@ const resume = props => {
 					</div>					
 										
 
-					<div class="entry">						
-						<div class="entry_title">
+					<div className="entry">						
+						<div className="entry_title">
 							<h4>Lynbrook High School</h4><h5>2000-2004</h5>
 						</div>					
 					</div>					
 							
 				</div>					
-				<div class="sidebar">						
+				<div className="sidebar">						
 					<h2>Technologies</h2>										
 					<ul>							
 						<li>HTML/CSS</li>							
 						<li>Javascript</li>		
-						<li>React</li>
+						<li>ReactJS</li>
 						<li>MontageJS</li>
 						<li>Wordpress</li>
 						<li>Docker</li>					

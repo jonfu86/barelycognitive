@@ -142,9 +142,9 @@
 		overflow: hidden;
 		transition: all 0.4s ease;
 	}
-	.accent {
-		display: none;
-	}
+	// .accent {
+	// 	display: none;
+	// }
 	
 }
 
@@ -242,21 +242,23 @@
 	span:nth-child(3){			
 		transform: rotate(-45deg) translateY(-8px) translateX(8px);
 	}
-	.accent {
-		display: block;
-	    position: absolute;
-	    height: 700px;
-	    width: 700px;
-	    right: -350px;
-	    top: -350px;
-	    border-radius: 50%;
-	    background-color: rgba(38, 84, 133, 0.54);
-	    pointer-events: none;
-	}
+	// .accent {
+	// 	display: block;
+	// 	display:none;
+	//     position: absolute;
+	//     height: 700px;
+	//     width: 700px;
+	//     right: -350px;
+	//     top: -350px;
+	//     border-radius: 50%;
+	// 	background-color: rgba(38, 84, 133, 0.54);
+	// 	background-color:black;
+	//     pointer-events: none;
+	// }
 }
 
 .button{
-	display: block;
+	display: none;
 	float: left;
 	clear: both;
 	padding: 20px 40px;
@@ -306,7 +308,7 @@
 
 //Media Queries for responsive CSS
 
-@media (max-width:865px){
+@media (max-width:900px){
 	.Header{
 		text-align: center;
 		.title{
@@ -323,7 +325,7 @@
 	}
 }
 
-@media (min-width:865px){
+@media (min-width:900px){
 	.nav-burger {
 		display: none;
 	}
